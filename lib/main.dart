@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
       ),
-routes:{
-  HomePage.routeName:(context) => HomePage(),
-} ,
-initialRoute: HomePage.routeName,
+      debugShowCheckedModeBanner: false,
+      routes: {
+        HomePage.routeName: (context) => HomePage(),
+      },
+      initialRoute: HomePage.routeName,
     );
   }
 }
